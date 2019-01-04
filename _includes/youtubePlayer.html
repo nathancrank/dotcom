@@ -1,2 +1,11 @@
 <!-- https://adam.garrett-harris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin/ -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+{%- if include.caption -%}
+	<figure>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+		<figcaption>
+			{{ include.caption }}
+		</figcaption>
+	</figure>
+{%- else -%}
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+{%- endif -%}
