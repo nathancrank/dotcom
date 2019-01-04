@@ -9,12 +9,15 @@ I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it,
 
 Initially, I wanted to replicate the Roomba's basic self-driving functionality: driving in a crooked line until colliding with something, then avoiding that object and continuing on its way. This was pretty easy and I got a basic version working the first night.  That's not to say it worked all that well. It featured a stationary distance sensor tucked into the front, and it simply couldn't detect enough objects.
 
+{% include youtubePlayer.html id="l9Zbtu17REI" %}
+
 On the second evening, I added a pivoting arm to the front and moved the distance sensor there. This enabled it to sweep back and forth quickly, dramatically improving its ability to avoid.  It still got stuck under a lot of furniture that was above its view — an impact sensor on the upper portion of the arm solved this. 
 
 At this point, it was a decent self-propelled, semi-autonomous driver. Not a good one, but a decent one. I figured as long as it was driving around, it might as well sweep. I wrapped some paper towel and felt around a few gears, plugged it into the rear right-side motor, and built a tray behind the robot to catch dirt.
 
 As you can see, it's no Roomba.
 
+{% include youtubePlayer.html id="9P2SxUPruQw" %}
 
 With that said, after driving around a while, it did pick up a bit of dirt and dog hair. It's not efficient, but it does technically work.
 

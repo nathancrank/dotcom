@@ -15,6 +15,8 @@ Something I should mention is I have a PS4, and did all of this before the relea
 So I built a TV, as you can see above. The TV is made up of 144 pixels: 16 horizontally, 9 vertically. Each pixel is built of 9 sub-pixel units: 3 red, 3 green, 3 blue. You can see the sub pixels below as I programmed them. Each pixel would be backed by a simple 3 bit buffer, each bit storing each sub-pixel color. This 432bit display buffer would then ideally be connected to a timing bus, a super basic memory I/O controller, a basic programmer, and a 4.38kilobit memory register to store video frames (3bits per frame per pixel, 6 bits per frame for stereo sound). The stereo sound was achieved by storing 6 extra bits, that represent two notes, one left channel, one right channel.
 Wiring everything was a lot of fun. By which I mean it was a real pain. Especially once the PS4's memory limits were being pushed. I quick saved quite frequently.
 
+{% include youtubePlayer.html id="6RjIPHn20zI" %}
+
 Wiring is so much fun.
 And then I realized I left no space for any real circuitry to hold the buffer, so I removed everything and rebuilt the TV in a big box.
  Reprogramming the sub pixels... 
