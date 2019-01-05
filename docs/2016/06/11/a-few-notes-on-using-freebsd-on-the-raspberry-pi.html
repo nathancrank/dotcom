@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>A few notes on using FreeBSD on the Raspberry Pi | Nathan Crank</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="A few notes on using FreeBSD on the Raspberry Pi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’ve recently been using FreeBSD on my Raspberry Pi (and anything else I can install it on) and I just wanted to share a few notes for those deciding to try it out on their Pi. There are a lot of articles out there on why you might want to use FreeBSD, so I’ll leave that to smarter people than myself." />
+<meta property="og:description" content="I’ve recently been using FreeBSD on my Raspberry Pi (and anything else I can install it on) and I just wanted to share a few notes for those deciding to try it out on their Pi. There are a lot of articles out there on why you might want to use FreeBSD, so I’ll leave that to smarter people than myself." />
+<link rel="canonical" href="/2016/06/11/a-few-notes-on-using-freebsd-on-the-raspberry-pi.html" />
+<meta property="og:url" content="/2016/06/11/a-few-notes-on-using-freebsd-on-the-raspberry-pi.html" />
+<meta property="og:site_name" content="Nathan Crank" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-06-11T00:00:00-04:00" />
+<script type="application/ld+json">
+{"description":"I’ve recently been using FreeBSD on my Raspberry Pi (and anything else I can install it on) and I just wanted to share a few notes for those deciding to try it out on their Pi. There are a lot of articles out there on why you might want to use FreeBSD, so I’ll leave that to smarter people than myself.","@type":"BlogPosting","url":"/2016/06/11/a-few-notes-on-using-freebsd-on-the-raspberry-pi.html","headline":"A few notes on using FreeBSD on the Raspberry Pi","dateModified":"2016-06-11T00:00:00-04:00","datePublished":"2016-06-11T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2016/06/11/a-few-notes-on-using-freebsd-on-the-raspberry-pi.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Nathan Crank" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Nathan Crank</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">A few notes on using FreeBSD on the Raspberry Pi</h1><p class="post-meta">
+      <time class="dt-published" datetime="2016-06-11T00:00:00-04:00" itemprop="datePublished">Jun 11, 2016
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I’ve recently been using <a href="https://www.freebsd.org/">FreeBSD</a> on my Raspberry Pi (and anything else I can install it on) and I just wanted to share a few notes for those deciding to try it out on their Pi. There are a lot of articles out there on <a href="https://www.freebsd.org/advocacy/whyusefreebsd.html">why you might want to use FreeBSD</a>, so I’ll leave that to smarter people than myself.
+<!--more--></p>
+
+<ul>
+  <li>For most home projects that you can run on a PI, it probably doesn’t make much of a difference if you choose between FreeBSD’s current or stable branch. If you really need great stability, you probably need something better than a Raspberry Pi anyway, like anything with a hardware clock, a real power supply, a real disk interface, etc …</li>
+  <li>Read the whole RaspberryPi page on FreeBSD’s site. If you make it to the end, there are links to download sd-card images. I did not do this initially, and instead started by using <a href="https://github.com/freebsd/crochet">Crochet</a>.</li>
+  <li>Speaking of <a href="https://github.com/freebsd/crochet">Crochet</a>, it’s a pretty cool utility. It’s great for building custom images for any development board that is supported, and looks like a great tool to help with getting it up on unsupported boards as well. Just remember that compiling kernels is not a fast activity regardless of your machine.</li>
+  <li>pkg install is fantastic on an Intel machine, because basically every port has a binary snapshot available. That is not the case on anything in the arm world. There are a lot of ports that have no binary available, and so have to be compiled instead. There are also some ports that don’t work, or may pose some difficulty. The situation isn’t that different from other operating systems running on these arm development boards; however, the ports system is an advantage for FreeBSD here, because it’s trivial to get the source and compile most things. It’s obviously not that you can’t compile on other operating systems, its just that outside the BSD world, you’re OS is unlikely to provide the source code and some porting help.</li>
+  <li>Compiling takes forever on the slow little Pi. <a href="http://elinux.org/RPiconfig">Overclock your Pi</a> and lower the GPU ram before you start compiling. I strongly recommend running make config-recursive before you make install. It doesn’t totally solve the problem of having to babysit your compile answering config questions periodically, but it does at least remove a few more of those config screens.</li>
+  <li>Overclocking your Raspberry Pi is still easy even without raspi-config. You can use <a href="http://elinux.org/RPiconfig">this guide</a> to update the config.txt file on the sd card’s FAT partition.</li>
+  <li>Even overclocked to 950Mhz, the Pi took over a week to compile CUPs and its dependencies.</li>
+  <li>Before using FreeBSD on the Pi you probably want to be fairly familiar with the Pi and with either FreeBSD itself, or *nix operating systems in general.</li>
+  <li>One of the best things about FreeBSD is the FreeBSD handbook. It’s an amazing resource for FreeBSD users, and honestly something that I think is integral to how nice an experience using FreeBSD is. The handbook is really well organized and is often the only thing you need to answer your question.</li>
+</ul>
+
+  </div><a class="u-url" href="/2016/06/11/a-few-notes-on-using-freebsd-on-the-raspberry-pi.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Nathan Crank</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Nathan Crank</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/nathancrank"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">nathancrank</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>LEGO Sweeping Bot | Nathan Crank</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="LEGO Sweeping Bot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it, Emma and I built the robot from the booklet, loaded up the basic program provided, and made it drive around for a minute shooting little balls. Then, because it’s LEGO, I took it apart and began work on my own robot." />
+<meta property="og:description" content="I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it, Emma and I built the robot from the booklet, loaded up the basic program provided, and made it drive around for a minute shooting little balls. Then, because it’s LEGO, I took it apart and began work on my own robot." />
+<link rel="canonical" href="/2017/03/10/lego-sweeping-bot.html" />
+<meta property="og:url" content="/2017/03/10/lego-sweeping-bot.html" />
+<meta property="og:site_name" content="Nathan Crank" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-03-10T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it, Emma and I built the robot from the booklet, loaded up the basic program provided, and made it drive around for a minute shooting little balls. Then, because it’s LEGO, I took it apart and began work on my own robot.","@type":"BlogPosting","url":"/2017/03/10/lego-sweeping-bot.html","headline":"LEGO Sweeping Bot","dateModified":"2017-03-10T00:00:00-05:00","datePublished":"2017-03-10T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2017/03/10/lego-sweeping-bot.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Nathan Crank" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Nathan Crank</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">LEGO Sweeping Bot</h1><img src="/assets/2017-03-10-lsb-CD9A2933-b7a61a3fcd559277ebb8520b7b6d9238130d09f9013516a288e3e584f04536ea.jpg"><p class="post-meta">
+      <time class="dt-published" datetime="2017-03-10T00:00:00-05:00" itemprop="datePublished">Mar 10, 2017
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it, Emma and I built the robot from the booklet, loaded up the basic program provided, and made it drive around for a minute shooting little balls. Then, because it’s LEGO, I took it apart and began work on my own robot.
+<!--more--></p>
+
+<p>Initially, I wanted to replicate the Roomba’s basic self-driving functionality: driving in a crooked line until colliding with something, then avoiding that object and continuing on its way. This was pretty easy and I got a basic version working the first night.  That’s not to say it worked all that well. It featured a stationary distance sensor tucked into the front, and it simply couldn’t detect enough objects.</p>
+
+<!-- https://adam.garrett-harris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin/ -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l9Zbtu17REI" frameborder="0" allowfullscreen=""></iframe>
+
+<p>On the second evening, I added a pivoting arm to the front and moved the distance sensor there. This enabled it to sweep back and forth quickly, dramatically improving its ability to avoid.  It still got stuck under a lot of furniture that was above its view — an impact sensor on the upper portion of the arm solved this.</p>
+
+<p><img src="/assets/2017-03-10-lsb-E505BDEE-C2ED-43D1-BE3E-1dacb6c75bf4e25078476ad5a3d629d6cb5657eb2b8e405955a13dba9c336997.jpg" /></p>
+
+<p>At this point, it was a decent self-propelled, semi-autonomous driver. Not a good one, but a decent one. I figured as long as it was driving around, it might as well sweep. I wrapped some paper towel and felt around a few gears, plugged it into the rear right-side motor, and built a tray behind the robot to catch dirt.</p>
+
+<p><img src="/assets/2017-03-10-lsb-F7569689-C51C-4135-B3AD-cbe395174238d21c450c55ce67bffc55580ccfce88bb9fe0d8b02f1240734190.jpg" /></p>
+
+<figure>
+		<img src="/assets/2017-03-10-lsb-96488A5D-89A5-49AA-BA56-5095bd992d896e3458fc37da21c895d0a3ba85f85d57bbe0ef82852282144461.jpg" />
+		<figcaption>
+			As you can see, it's no Roomba.
+		</figcaption>
+	</figure>
+
+<!-- https://adam.garrett-harris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin/ -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9P2SxUPruQw" frameborder="0" allowfullscreen=""></iframe>
+
+<p><img src="/assets/2017-03-10-lsb-D394ECBA-F055-419D-A75A-40b8265103f8324b72872dea622401b6d03fc89f062ef02c2a52a0b405ad8bd2.jpg" /></p>
+
+<p>With that said, after driving around a while, it did pick up a bit of dirt and dog hair. It’s not efficient, but it does technically work.</p>
+
+<p><img src="/assets/2017-03-10-lsb-1489196389257-8d29fddfa9655c7321dda0f66784a47e26e51146b0dc00d56ca4c7b06d77445d.png" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-1489196396462-7b0c0a5d6e307b58db12f4e56a13ff45225d68e9b6637b85ac3c6f8c5d00c4b8.jpg" /></p>
+
+<p>This was only possible because LEGO built an incredible product that packs the power of a small development board, like an Arduino, into something anyone could use. Software for the NXT 2 feels like a relic of when it was initially offered, circa 2006, but it was clearly a well developed product at that point. It’s easy to drop their action blocks onto the timeline and assemble some pretty powerful programs. The ability to select a few blocks from your entire program, then click one button and have them run on your NXT is something from which the Arduino could learn a trick or two. The software looks similar to a Scratch environment, but it definitely has its own take on the paradigm and is branded phenomally well.</p>
+
+<p><img src="/assets/2017-03-10-lsb-D5F2AD1E-12F9-4378-9018-9caa6f23a5504d53b8456d29970c7f48035ed3550a1c07a91dd4675816dafe2a.jpg" /></p>
+
+<p>The NXT 3 looks like a really solid update, and I might have grab that. Can’t wait to see what LEGO has in store for the next update.</p>
+
+<p><img src="/assets/2017-03-10-lsb-F58ECB54-BC24-49E1-A50A-48dc35b0595f86068248a0bc6dfd9622e39f137a3e5b7f643dfc0fe3d8c0e059.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-35692EEC-4F08-421D-B4D7-0050f1ada65c5260d3f4ed8a31ac9643520968ba5598c2ccf3273e1a656afdd8.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-C150356A-13E1-4A3F-8BD4-c697a30146d4df72f452cd62d54df47576059b14a976ca7eff3c602cef3988cb.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-9F3EEC7B-09B9-43F6-BD27-715ae3e38f797197c1895b0d240c12ccadcffe67a7aca045adba1e383ba55d05.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-4156345F-9802-464C-9CD1-f6c01ae19e911678faaaed0c4af4fc32c6c0c9b0a6a0cc7fa92a732baec8fc87.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-IMG_3132-2e43b75e28a865c4b3eeab78c15ee74ae77493433c3e0570aeab476988091db2.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-1489196455024-eefe0f99143c474e95be304b2471da6c47e81625e1f64ff80830c48b3be502fb.jpg" /></p>
+
+<p><img src="/assets/2017-03-10-lsb-1489196460547-f3619be9de17470bf90424bb2e23fc8146dc53f7e9e10444489890a5d4b0943e.jpg" /></p>
+
+
+  </div><a class="u-url" href="/2017/03/10/lego-sweeping-bot.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Nathan Crank</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Nathan Crank</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/nathancrank"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">nathancrank</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
