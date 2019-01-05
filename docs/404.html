@@ -37,8 +37,50 @@
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p><strong>Sorry to disappoint partner, but there ain&apos;t nothin&apos; here.</strong></p>
+  <p>Try the <a href='/dotcom/''>homepage</a> or one of the following articles:</p>
+  <ul>
+    <script type="text/javascript">
+
+      var postsHREF = ["/2018/02/19/jimmy's-garbage-gift.html","/2017/10/10/rebuilding-sanctuary.html","/2017/03/10/lego-sweeping-bot.html","/2017/03/10/lego-set-no.-205.html","/2016/12/28/failing-to-bring-tv-to-fallout.html","/2016/06/11/a-few-notes-on-using-freebsd-on-the-raspberry-pi.html","/2016/06/08/introducing-marsellus-the-ripper.html","/2016/05/31/cracking-longer-passwords-with-john-the-ripper.html"];
+
+      var postsTitle = ["Jimmy's Garbage Gift","Rebuilding Sanctuary","LEGO Sweeping Bot","LEGO Set NO. 205","Failing to bring TV to Fallout","A few notes on using FreeBSD on the Raspberry Pi","Introducing Marsellus the Ripper","Cracking Longer Passwords with John The Ripper"];
+      var postsExcerpt = ["When I was an Apple Genius I had a boss named Jimmy. Jimmy was quite the character, for a whole slew of reasons. Key among them, was his computer collection, or garbage pile, or debilitating hoarding problem, depending on how you looked it. He lived out a bit out of the city, in the country, on a parcel of land that used to be part of his father’s larger property. His house, garage and backyard easily contained 400-500 old computers, mostly Apples, and a some of old arcade hardware. His house was covered in computers and accessories and parts and boxes of old software, from wall to wall.","I’ve spent a lot of time playing Fallout 4. Most of that time has been spent crafting things, such as attempting to construct a memory circuit. But by far the largest time-sink has been rebuilding Sanctuary.","I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it, Emma and I built the robot from the booklet, loaded up the basic program provided, and made it drive around for a minute shooting little balls. Then, because it’s LEGO, I took it apart and began work on my own robot.","Late last night, while browsing craigslist to get an idea of what people sell LEGO for (it depends, but it’s largely by weight in pounds), I stumbled across a NO. 205 set at a local thrift shop. So late this afternoon, I went and bought it. In store it appeared to have at least the majority of its parts, and the parts seemed roughly right for the supposed age. So I bought it.","I’ve spent a lot of time in Fallout 4. Like enough that I’m surprised I’m not single. When the Wasteland Workshop DLC was released, I got very lost in it. The logic gates seemed to make possible potentially interesting things in game. Some people got pretty creative and implemented half-adders and built full calculators. For some reason the fact that some people could create calculators gave me the confidence to create a TV. Why? Who knows.","I’ve recently been using FreeBSD on my Raspberry Pi (and anything else I can install it on) and I just wanted to share a few notes for those deciding to try it out on their Pi. There are a lot of articles out there on why you might want to use FreeBSD, so I’ll leave that to smarter people than myself.","Last time we left off, I had been overly clever and locked myself out of a lot of my computing life. Consequently, I went for a deep dive into John the Ripper. Then I really lost all semblance of handling this responsibly like an adult by hopping on eBay and buying an old HP Proliant ML350 G5 to dedicate to cracking.","Sometimes, I’m too clever for my own good. Then I have to do extra work to solve a problem created by that ever-present jackass, my past self. Anyways, here’s the lesson of one of those moments: how to make John the Ripper work on longer passwords."];
+
+      var randomIndexUsed = [];
+      var counter = 0;
+      var numberOfPosts = 3;
+
+      while (counter < numberOfPosts)
+      {
+          var randomIndex;
+          var postHREF;
+          var postTitle;
+
+          randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+          if (randomIndexUsed.indexOf(randomIndex) == "-1")
+          {
+              postHREF = postsHREF[randomIndex];
+              postTitle = postsTitle[randomIndex];
+              postExcerpt = postsExcerpt[randomIndex];
+
+              if (counter == (numberOfPosts - 1))
+              {
+                  document.write('<li><a href="' + postHREF + '">' + postTitle + '</a><p>' + postExcerpt + '</p></li>');
+              }
+              else
+              {
+                  document.write('<li><a href="' + postHREF + '">' + postTitle + '</a><p>' + postExcerpt + '</p></li>');
+              }
+
+              randomIndexUsed.push(randomIndex);
+
+              counter++;
+          }
+      }
+    </script>
+  </ul>
 </div>
 
       </div>
@@ -50,10 +92,6 @@
 </div>
 
 </footer>
-<script src="/dotcom/assets/lightbox.js" type="text/javascript"></script>
-<script>
-	var lightbox = new Lightbox();
- 	lightbox.load();
-</script></body>
+</body>
 
 </html>

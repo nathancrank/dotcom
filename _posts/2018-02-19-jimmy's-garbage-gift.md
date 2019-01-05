@@ -7,9 +7,9 @@ alt: "An Apple Lisa 2 disassembled on my workbench"
 ---
 
 When I was an Apple Genius I had a boss named Jimmy. Jimmy was quite the character, for a whole slew of reasons. Key among them, was his computer collection, or garbage pile, or debilitating hoarding problem, depending on how you looked it. He lived out a bit out of the city, in the country, on a parcel of land that used to be part of his father's larger property. His house, garage and backyard easily contained 400-500 old computers, mostly Apples, and a some of old arcade hardware. His house was covered in computers and accessories and parts and boxes of old software, from wall to wall.
+<!--more-->
 
 One day he decided to move to California. I knew he wasn't going to take his insanely unmanageable collection and asked if I could salvage a few. I wish I had taken photos at the time. I left his place with what I could pack into my little Volvo. The rest of the collection he hauled out into the backyard and burned ...
-<!--more-->
 
 I took home:
 
