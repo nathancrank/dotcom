@@ -36,22 +36,6 @@ show_excerpts: true
 excerpt_separator: <!--more-->
 
 
-# # Assets
-# assets:
-#   gzip: true
-#   exclude:
-#     - _raw
-#     - .asset-cache
-#     - vendor
-#     - .gitignore
-#   compress:
-#     css: true
-#     js: true
-#     img: true
-#   digest: true
-#   sources:
-#     - assets/post-images
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
