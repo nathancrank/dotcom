@@ -31,13 +31,6 @@ plugins:
   # - jekyll-assets
 destination: "docs"
 
-defaults:
-  - scope:
-      path: "assets/post-images"
-    values:
-      image: true
-
-
 # Excepts
 show_excerpts: true
 excerpt_separator: <!--more-->
