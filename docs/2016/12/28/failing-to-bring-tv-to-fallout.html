@@ -38,7 +38,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Failing to bring TV to Fallout</h1><img src="/assets/2016-12-27-ftv-1489196558179-66184fd3b2034fc05d688574d646ce161fb514a219737f37a73e884a69caf493.jpg"><p class="post-meta">
+    <h1 class="post-title p-name" itemprop="name headline">Failing to bring TV to Fallout</h1><img src='/assets/post-images/2016-12-27-ftv-1489196558179.jpeg'><p class="post-meta">
       <time class="dt-published" datetime="2016-12-28T00:00:00-05:00" itemprop="datePublished">Dec 28, 2016
       </time></p>
   </header>
@@ -50,7 +50,7 @@
 <p>To me, Starlight Drive-in was an ideal place for the TV. So I set out to create a giant display in game, that I could display a basic 10 frame animation on.</p>
 
 <figure>
-		<img src="/assets/2016-12-27-ftv-1489196497361-cde1553fcd911c8ff28929ba4d5a5570eb4f88999959afb2ae7105ec60525058.jpg" />
+		<img src="/assets/post-images/2016-12-27-ftv-1489196497361.jpeg" />
 		<figcaption>
 			Testing a memory circuit for a single pixel's buffer.
 		</figcaption>
@@ -60,11 +60,11 @@
 
 <p>So I built a TV, as you can see above. The TV is made up of 144 pixels: 16 horizontally, 9 vertically. Each pixel is built of 9 sub-pixel units: 3 red, 3 green, 3 blue. You can see the sub pixels below as I programmed them. Each pixel would be backed by a simple 3 bit buffer, each bit storing each sub-pixel color. This 432bit display buffer would then ideally be connected to a timing bus, a super basic memory I/O controller, a basic programmer, and a 4.38kilobit memory register to store video frames (3bits per frame per pixel, 6 bits per frame for stereo sound). The stereo sound was achieved by storing 6 extra bits, that represent two notes, one left channel, one right channel.</p>
 
-<p><img src="/assets/2016-12-27-ftv-Fallout+4_20160630214003-93857918b0815e453fdf39cf606407c2099b79ba88337131e7fcf05315baa1e6.jpg" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-Fallout+4_20160630214003.jpg" /></p>
 
-<p><img src="/assets/2016-12-27-ftv-Fallout+4_20160630223351-ec877d978b8abf54aa206883e1b9ef7d375ae9f4b875ad64ca0a44230e4245cb.jpg" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-Fallout+4_20160630223351.jpg" /></p>
 
-<p><img src="/assets/2016-12-27-ftv-Fallout+4_20160630230710-fa7022a79761d82ef23ff41235628e4a7be9830e1024541b0cecd87fd20407e4.jpg" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-Fallout+4_20160630230710.jpg" /></p>
 
 <p>Wiring everything was a lot of fun. By which I mean it was a real pain. Especially once the PS4’s memory limits were being pushed. I quick saved quite frequently.</p>
 
@@ -79,14 +79,14 @@
 <p>And then I realized I left no space for any real circuitry to hold the buffer, so I removed everything and rebuilt the TV in a big box.</p>
 
 <figure>
-		<img src="/assets/2016-12-27-ftv-Fallout+4_20160720191115-66184fd3b2034fc05d688574d646ce161fb514a219737f37a73e884a69caf493.jpg" />
+		<img src="/assets/post-images/2016-12-27-ftv-Fallout+4_20160720191115.jpg" />
 		<figcaption>
 			Reprogramming the sub pixels...
 		</figcaption>
 	</figure>
 
 <figure>
-		<img src="/assets/2016-12-27-ftv-1489196564114-af11cbc0f52e82cd5349e42f1544f0f96e8dd96a4d87ded825af994b540c7fcb.jpg" />
+		<img src="/assets/post-images/2016-12-27-ftv-1489196564114.jpeg" />
 		<figcaption>
 			Wiring the second time is even more fun.
 		</figcaption>
@@ -96,27 +96,27 @@
 
 <p>The basic idea is that there are two input switches, one for controlling writing, and one for controlling if the bit is on or off. If the write switch is off, the stored bit cannot be changed. The write switch would be controlled by the timing bus eventually, switching on for every other timing pulse. The data switch is set while the write switch is off. The grid of images below shows how the circuit works. iCircuit is an amazing app by the way.</p>
 
-<p><img src="/assets/2016-12-27-ftv-IMG_2519-492c3b429ec1cf3c900c5116725af49697d32c78919b69229765eeb1a4004f10.png" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-IMG_2519.png" /></p>
 
-<p><img src="/assets/2016-12-27-ftv-IMG_2526-93d968e9f1836f0235a453232aa71112cd88aca45c75d3548f7aa41c254f662e.png" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-IMG_2526.png" /></p>
 
-<p><img src="/assets/2016-12-27-ftv-IMG_2527-30abe205ef3fd4334dc1d91be56243d7305c2b58294ca87da881d57c61abdf6b.png" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-IMG_2527.png" /></p>
 
-<p><img src="/assets/2016-12-27-ftv-IMG_2530-e249c028a4e707c39910ba1815bf4042b1628651dc1d70746bde6c67b9b03f45.png" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-IMG_2530.png" /></p>
 
-<p><img src="/assets/2016-12-27-ftv-1489196582450-103a68cf3db5a784551ed92b46394ba73c33fa993eb003a6c814fac11878744a.jpg" /></p>
+<p><img src="/assets/post-images/2016-12-27-ftv-1489196582450.jpeg" /></p>
 
 <p>But here’s the bad news, and here is why the settlers of my Fallout community will not get to watch the glory of a 10 second gif: Logic Gates in Fallout 4 are completely broken. The basic issue is that it treats the electrical circuit as on or off, when in real electronics, its high or low. Essentially it’s two different binary systems at play, [1,0] vs [1,-1]. Anything that loops/buffers will not work. And even the much discussed online AND buffer hack will not resolve this. No matter how many ANDs you shove in there. Trust me.</p>
 
 <figure>
-		<img src="/assets/2016-12-27-ftv-1489196588766-e249c028a4e707c39910ba1815bf4042b1628651dc1d70746bde6c67b9b03f45.png" />
+		<img src="/assets/post-images/2016-12-27-ftv-1489196588766.png" />
 		<figcaption>
 			This doesn't work in Fallout 4's Logic Gate system.
 		</figcaption>
 	</figure>
 
 <figure>
-		<img src="/assets/2016-12-27-ftv-1489196594513-0f84e39604cd9530e1a5b08c4dbcec798c86ee318881785a870aefd78019fd39.jpg" />
+		<img src="/assets/post-images/2016-12-27-ftv-1489196594513.jpeg" />
 		<figcaption>
 			As you can see, this is broken.
 		</figcaption>
@@ -125,7 +125,7 @@
 <p>So that’s it. With that failure, the project comes to an end. Unless Bethesda decides to fix it, it won’t work. And I don’t see them fixing it.</p>
 
 <figure>
-		<img src="/assets/2016-12-27-ftv-1489196599217-c49bd2e2562e5927f649e58bf92c6b8332b052ae19eb79ad48b6d38c87f7db9f.jpg" />
+		<img src="/assets/post-images/2016-12-27-ftv-1489196599217.jpeg" />
 		<figcaption>
 			Sad empty seating that will remain empty, due to technical difficulties...
 		</figcaption>

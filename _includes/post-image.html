@@ -1,10 +1,10 @@
 {%- if include.caption -%}
 	<figure>
-		{% asset '{{ include.image }}' %}
+		<img src='/assets/post-images/{{ include.image }}'>
 		<figcaption>
 			{{ include.caption }}
 		</figcaption>
 	</figure>
 {%- else -%}
-	{% asset '{{ include.image }}' %}
+	<img src='/assets/post-images/{{ include.image }}'>
 {%- endif -%}
