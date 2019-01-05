@@ -12,7 +12,7 @@ Initially, I wanted to replicate the Roomba's basic self-driving functionality: 
 
 {%
 	include
-	youtubePlayer.html
+	youtube-player.html
 	id="l9Zbtu17REI"
 %}
 
@@ -41,7 +41,7 @@ At this point, it was a decent self-propelled, semi-autonomous driver. Not a goo
 	size="half"
 %}
 
-{% include youtubePlayer.html id="9P2SxUPruQw" %}
+{% include youtube-player.html id="9P2SxUPruQw" %}
 
 {% include
 	post-image.html

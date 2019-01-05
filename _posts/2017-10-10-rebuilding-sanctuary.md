@@ -21,7 +21,7 @@ The following is a brief tour.
 
 {%
 	include
-	youtubePlayer.html
+	youtube-player.html
 	id="aozfEEQd5WY"
 %}
 

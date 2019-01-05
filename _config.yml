@@ -25,14 +25,17 @@ instagram_username: arealcrank
 rss: 'Subscribe via RSS'
 linkedin_username: nathancrank
 
+google_analytics: UA-104932350-1
+
 # Build settings
 markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  # - jekyll-assets
 destination: "docs"
+sass:
+  style: compressed
 
 # Excepts
 show_excerpts: true

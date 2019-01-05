@@ -47,7 +47,7 @@ Wiring everything was a lot of fun. By which I mean it was a real pain. Especial
 
 {%
 	include
-	youtubePlayer.html
+	youtube-player.html
 	id="6RjIPHn20zI"
 	caption="Wiring is so much fun."
 %}
