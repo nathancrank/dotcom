@@ -21,7 +21,7 @@ layout: default
           </a>
         </h2>
         {%- if post.banner -%}
-          <img src='assets/post-images/{{ post.banner }}'>
+          <img src='assets/post-images/{{ post.banner }}' alt='{{ post.alt }}' />
         {%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}

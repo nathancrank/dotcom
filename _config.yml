@@ -19,7 +19,7 @@ title: Nathan Crank
   # My website. Yup.
 baseurl: "/dotcom" # the subpath of your site, e.g. /blog
 url: "https://nathancrank.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+twitter_username: nathancrank
 github_username:  nathancrank
 
 # Build settings

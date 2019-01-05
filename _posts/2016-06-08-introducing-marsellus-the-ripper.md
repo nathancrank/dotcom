@@ -13,6 +13,7 @@ That server has arrived, and has been dubbed Marsellus Wallace. The hardware all
 	post-image.html
 	image="2016-06-07-mar-1465341026998.jpeg"
 	caption="A bunch of old crap I own attached to Marsellus, yet another questionable, old thing I now own."
+	alt="A Dell 17in LCD panel, an old Apple acryllic tub style keyboard, a 5$ logitech USB mouse, an old broken Apple mouse pad, and the HP Proliant ML350 G5."
 %}
 
 I've installed FreeBSD and WindowMaker on it, which if I say so myself, makes for a pretty nice little setup. It's a little like using NeXTSTEP, except in 2016, with programs that are useful in 2016. It's been fun to tinker with, and I have most definitely wasted too much time tinkering with it.
