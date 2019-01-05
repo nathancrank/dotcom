@@ -26,18 +26,21 @@ So I built a TV, as you can see above. The TV is made up of 144 pixels: 16 horiz
 	post-image.html
 	image="2016-12-27-ftv-Fallout+4_20160630214003.jpg"
 	alt="All the red subpixels turned on."
+	size="third"
 %}
 
 {% include
 	post-image.html
 	image="2016-12-27-ftv-Fallout+4_20160630223351.jpg"
 	alt="All the green subpixels turned on."
+	size="third"
 %}
 
 {% include
 	post-image.html
 	image="2016-12-27-ftv-Fallout+4_20160630230710.jpg"
 	alt="All the blue subpixels turned on."
+	size="third"
 %}
 
 Wiring everything was a lot of fun. By which I mean it was a real pain. Especially once the PS4's memory limits were being pushed. I quick saved quite frequently.
@@ -72,25 +75,29 @@ The basic idea is that there are two input switches, one for controlling writing
 {% include
 	post-image.html
 	image="2016-12-27-ftv-IMG_2519.png"
-	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can 'remember' the state of the data switch from the last time the write switch was triggered. In this image, both switches are off, and the light is off."
+	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can *remember* the state of the data switch from the last time the write switch was triggered. In this image, both switches are off, and the light is off."
+	size="quarter"
 %}
 
 {% include
 	post-image.html
 	image="2016-12-27-ftv-IMG_2526.png"
-	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can 'remember' the state of the data switch from the last time the write switch was triggered. In this image, the data switch is off and the write switch is on, resulting in the light being off."
+	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can *remember* the state of the data switch from the last time the write switch was triggered. In this image, the data switch is off and the write switch is on, resulting in the light being off."
+	size="quarter"
 %}
 
 {% include
 	post-image.html
 	image="2016-12-27-ftv-IMG_2527.png"
-	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can 'remember' the state of the data switch from the last time the write switch was triggered. In this image, both switches are on, resulting in the light being lit."
+	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can *remember* the state of the data switch from the last time the write switch was triggered. In this image, both switches are on, resulting in the light being lit."
+	size="quarter"
 %}
 
 {% include
 	post-image.html
 	image="2016-12-27-ftv-IMG_2530.png"
-	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can 'remember' the state of the data switch from the last time the write switch was triggered. In this image, the data switch is still on, but the write switch is off, leaving the ligth still on, thus remembering the last write state."
+	alt="A circuit representing a memory circuit. Data and Write switches connect thru logic gates and can *remember* the state of the data switch from the last time the write switch was triggered. In this image, the data switch is still on, but the write switch is off, leaving the ligth still on, thus remembering the last write state."
+	size="quarter"
 %}
 
 {% include

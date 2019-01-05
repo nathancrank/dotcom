@@ -21,6 +21,8 @@ baseurl: "/dotcom" # the subpath of your site, e.g. /blog
 url: "https://nathancrank.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nathancrank
 github_username:  nathancrank
+instagram_username: arealcrank
+rss: 'Subscribe via RSS'
 
 # Build settings
 markdown: kramdown

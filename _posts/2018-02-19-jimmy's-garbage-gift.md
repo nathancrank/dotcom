@@ -54,7 +54,7 @@ I'll write more about the actual restorations, but in the meantime, enjoy some p
 	post-image.html
 	image="2018-02-19-jgg-1519074692249.jpeg"
 	caption="Sep 1 '83 — With love from Inspector 37"
-	alt="Close up of an Apple Lisa keyboard circuit board. SEP 1, '83 printed on the board alongside a 37 encircled in a heart."
+	alt="Close up of an Apple Lisa keyboard circuit board. SEP 1, &apos;83 printed on the board alongside a 37 encircled in a heart."
 %}
 
 {% include

@@ -48,14 +48,14 @@ The following is a brief tour.
 {% include
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161229211417.jpg"
-	alt="A front view of the diner's bar."
+	alt="A front view of the diner&apos;s bar."
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507671998492.jpeg"
 	caption="Just one of the regulars."
-	alt="An alien drinks from a cup in the diner's eating area."
+	alt="An alien drinks from a cup in the diner&apos;s eating area."
 %}
 
 {% include
@@ -132,20 +132,20 @@ The following is a brief tour.
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161229211527.jpg"
 	caption="Let's continue in."
-	alt="A view from the barns entrance down the street. The crosswalk for Blood Bath and Beyond is visible along the top. Those familiar with Sanctuary's default state will note how tall it feels after this build out."
+	alt="A view from the barns entrance down the street. The crosswalk for Blood Bath and Beyond is visible along the top. Those familiar with Sanctuary&apos;s default state will note how tall it feels after this build out."
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161229211850.jpg"
 	caption="Make sure you stop in at Sturges Brahmin-Q, Voted No1 in the Commonwealth by, uh, well someone..."
-	alt="Front view of Sturge's Brahmin-Q."
+	alt="Front view of Sturge&apos;s Brahmin-Q."
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672061192.jpeg"
-	alt="A view of Sturge's Brahmin-Q during a green radiation storm."
+	alt="A view of Sturge&apos;s Brahmin-Q during a green radiation storm."
 %}
 
 {% include
@@ -186,7 +186,7 @@ The following is a brief tour.
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161229212250.jpg"
 	caption="Be sure to checkout your restored pre-war home."
-	alt="The characters home has been 'restored' using the games barn parts."
+	alt="The characters home has been restored using the games barn parts."
 %}
 
 {% include
@@ -199,12 +199,14 @@ The following is a brief tour.
 	post-image.html
 	image="2017-10-10-rs-1507672098507.jpeg"
 	alt="A view of the front room of the home."
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672102798.jpeg"
 	alt="Shauns Room"
+	imageSize="half"
 %}
 
 {% include
@@ -224,13 +226,15 @@ The following is a brief tour.
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672115685.jpeg"
-	alt="A view of one condo's living room."
+	alt="A view of one condo&apos;s living room."
+	size="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672118843.jpeg"
-	alt="A view of one condo's bedroom."
+	alt="A view of one condo&apos;s bedroom."
+	size="half"
 %}
 
 {% include
@@ -337,5 +341,5 @@ The following is a brief tour.
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161123160221.jpg"
 	caption="She's so excited she is standing in a chair."
-	alt="A woman stands on a gorilla chair. Because Fallout wouldn't be Fallout without collision and pathfinding bugs."
+	alt="A woman stands on a gorilla chair. Because Fallout wouldn&apos;t be Fallout without collision and pathfinding bugs."
 %}

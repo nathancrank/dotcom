@@ -25,12 +25,14 @@ Anyhow, here's a bunch of pictures of old LEGO. Enjoy.
 	post-image.html
 	image="2017-03-10-205-9C8242F5-79D1-4427-A98B-FBCD167B14CB.jpg"
 	alt="Top of the box. Imagery is split into sections, with the first from the left being the red square LEGO logo with Building Toy text. The next section is the vertical bars of the primary LEGO colors. The next square section reads 205 PIECE BEGINNER SET. The next rectangular panel beatures a close up of a build. The last panel features a person built from LEGO with a red hat."
+	size="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-205-B8EA5604-84C5-489F-8DAD-A1B65A5854AC.jpg"
 	alt="Bottom of the box. Same as the top of the box, except the images are of a boat and a truck."
+	size="half"
 %}
 
 {% include
@@ -61,12 +63,14 @@ Anyhow, here's a bunch of pictures of old LEGO. Enjoy.
 	post-image.html
 	image="2017-03-10-205-A8E5E38B-34E1-4A12-B140-144E2B22961B.jpg"
 	alt="A single red brick. Noteworthy is the early stud style, with a slight bezel, and the wordmark rendered in the original typeface, not the later san-serif used in plastic stamping and moulding."
+	size="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-205-2D460DFF-D45A-4F99-9FA7-C78E3D7485C9.jpg"
-	alt="The bottom side of the red brick. Noteworthy is the interior text that still reads 'Pat Pend'."
+	alt="The bottom side of the red brick. Noteworthy is the interior text that still reads Pat Pend."
+	size="half"
 %}
 
 {% include
@@ -85,12 +89,14 @@ Anyhow, here's a bunch of pictures of old LEGO. Enjoy.
 	post-image.html
 	image="2017-03-10-205-5BAF19AB-99F4-40B6-8DF2-E7866A37B550.jpg"
 	alt="Side view of the wheels. Noteworthy is the original stud style, same as the red brick earlier."
+	size="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-205-C211A79A-EB81-4239-BD39-58CE6B2FE638.jpg"
 	alt="The wheels placed atop a white brick. Noteworthy is the circular acryllic window on the side of the axle brick."
+	size="half"
 %}
 
 {% include
@@ -103,10 +109,12 @@ Anyhow, here's a bunch of pictures of old LEGO. Enjoy.
 	post-image.html
 	image="2017-03-10-205-67C32512-6016-42AD-AECA-12ED705B1496.jpg"
 	alt="Front side of the included ad booklet. Features other sets from the period."
+	size="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-205-4E8F5903-C07B-4809-8EE6-4ACB63931893.jpg"
 	alt="Back side of the included ad booklet."
+	size="half"
 %}
