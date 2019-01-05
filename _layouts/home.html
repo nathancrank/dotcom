@@ -16,7 +16,7 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link" href="{{ post.url | relative_url_root }}">
             {{ post.title | escape }}
           </a>
         </h2>
@@ -27,7 +27,7 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
         {%- if post.excerpt -%}
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{ post.url | relative_url_root }}">
             Continue Reading&nbsp;&hellip;
           </a>
         {%- endif -%}        
@@ -35,7 +35,7 @@ layout: default
       {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url_root }}">via RSS</a></p>
   {%- endif -%}
 
 </div>
