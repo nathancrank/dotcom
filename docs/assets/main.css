@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 400 100%/1.4 minion-pro-1, minion-pro-2, serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -54,7 +54,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 87.5%; }
 
 /**
  * Lists
@@ -70,7 +70,8 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 700;
+  font-family: aktiv-grotesk-1, aktiv-grotesk-2,sans-serif; }
 
 /**
  * Links
@@ -95,7 +96,7 @@ blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 112.5%;
   letter-spacing: -1px;
   font-style: italic; }
   blockquote > :last-child {
@@ -106,7 +107,7 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
+  font-size: 93.75%;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef; }
@@ -192,9 +193,9 @@ table {
   position: relative; }
 
 .site-title {
-  font-size: 26px;
+  font-size: 162.5%;
   font-weight: 300;
-  line-height: 54px;
+  line-height: 315%;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
@@ -203,14 +204,14 @@ table {
 
 .site-nav {
   float: right;
-  line-height: 54px; }
+  line-height: 315%; }
   .site-nav .nav-trigger {
     display: none; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 1.4; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
@@ -260,7 +261,7 @@ table {
   padding: 30px 0; }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 112.5%;
   margin-bottom: 15px; }
 
 .contact-list,
@@ -269,7 +270,7 @@ table {
   margin-left: 0; }
 
 .footer-col-wrapper {
-  font-size: 15px;
+  font-size: 93.75%;
   color: #828282;
   margin-left: -15px; }
 
@@ -312,10 +313,10 @@ table {
   flex: 1; }
 
 .page-heading {
-  font-size: 32px; }
+  font-size: 200%; }
 
 .post-list-heading {
-  font-size: 28px; }
+  font-size: 175%; }
 
 .post-list {
   margin-left: 0;
@@ -324,12 +325,12 @@ table {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 87.5%;
   color: #828282; }
 
 .post-link {
   display: block;
-  font-size: 24px; }
+  font-size: 150%; }
 
 /**
  * Posts
@@ -338,30 +339,30 @@ table {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 42px;
+  font-size: 262.5%;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
     .post-title {
-      font-size: 36px; } }
+      font-size: 225%; } }
 
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {
-    font-size: 32px; }
+    font-size: 200%; }
     @media screen and (max-width: 800px) {
       .post-content h2 {
-        font-size: 28px; } }
+        font-size: 175%; } }
   .post-content h3 {
-    font-size: 26px; }
+    font-size: 162.5%; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
-        font-size: 22px; } }
+        font-size: 137.5%; } }
   .post-content h4 {
-    font-size: 20px; }
+    font-size: 125%; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
-        font-size: 18px; } }
+        font-size: 112.5%; } }
 
 /**
  * Syntax highlighting styles
