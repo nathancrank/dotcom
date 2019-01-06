@@ -11,12 +11,12 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in paginator.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link" href="{{ post.url | join: site.baseurl | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h2>
@@ -27,7 +27,7 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
         {%- if post.excerpt -%}
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{ post.url | join: site.baseurl | relative_url }}">
             Continue Reading&nbsp;&hellip;
           </a>
         {%- endif -%}        
@@ -35,4 +35,22 @@ layout: default
       {%- endfor -%}
     </ul>
   {%- endif -%}
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | join: site.baseurl | relative_url }}" class="previous">
+        Previous
+      </a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | join: site.baseurl | relative_url }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+  </div>
 </div>

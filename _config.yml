@@ -33,6 +33,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 destination: "docs"
 sass:
   style: compressed
@@ -40,6 +41,10 @@ sass:
 # Excepts
 show_excerpts: true
 excerpt_separator: <!--more-->
+
+#pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 
 # Exclude from processing.
