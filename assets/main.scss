@@ -3,8 +3,22 @@
 ---
 
 /**
- * Minima used under permission of the MIT License
+ * Minima elements used under permission of the MIT License
  * https://github.com/jekyll/minima/blob/16d0fb76b7a4fb1d070fa03fd1e3f27dcab5e19b/LICENSE.txt
+ *
+ * Normalize elements used under permission of MIT License
+ * /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
  */
-@import "minima";
+
+@charset "utf-8";
+
+@import "vars",
+				"media",
+				"base",
+				"wrapper",
+				"header",
+				"footer",
+				"page",
+				"post";
+
 @import "lightbox";

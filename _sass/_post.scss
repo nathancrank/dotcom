@@ -1,0 +1,67 @@
+.post-list-heading {
+  font-size: 2em;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  font-size: 1.5em;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 2.25em;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include minq($mq-small) {
+    font-size: 3em;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  font-size: 1.2em;
+
+  h2 {
+    font-size: 1.75em;
+    @include minq($mq-medium) {
+      font-size: 2em
+    }
+  }
+
+  h3 {
+    font-size: 1.375em;
+    @include minq($mq-medium) {
+      font-size: 1.625em;
+    }
+  }
+
+  h4 {
+    font-size: 1.125em;
+    @include minq($mq-medium) {
+      font-size: 1.25em;
+    }
+  }
+}
