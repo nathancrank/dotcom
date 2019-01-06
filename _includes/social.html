@@ -1,4 +1,4 @@
-<ul class="social-media-list">
+<ul class="contact-list">
   {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
   <li><a href="https://eyeHear.app"><img class="svg-icon" src="{{ '/assets/icon-eye.svg' | relative_url }}"" /> <span class="username">eyeHear</span></a></li>
   {%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a></li>{%- endif -%}
