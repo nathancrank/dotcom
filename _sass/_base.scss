@@ -60,10 +60,11 @@ figure > img {
 }
 
 figcaption {
-  padding: .65em 0 .75em;
+  padding: .5em 0 0;
   font-size: .75em;
   font-family: $font-aktiv;
   font-weight: bold;
+  line-height: 1.4;
 }
 
 
