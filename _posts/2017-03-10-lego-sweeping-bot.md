@@ -30,15 +30,14 @@ At this point, it was a decent self-propelled, semi-autonomous driver. Not a goo
 	post-image.html
 	image="2017-03-10-lsb-F7569689-C51C-4135-B3AD.jpg"
 	alt="Rear quarter view of the robot showcasing its dirt tray."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-lsb-96488A5D-89A5-49AA-BA56.jpg"
-	caption="As you can see, it&apos;s no Roomba."
 	alt="The sweeping mechanism is two gears holding together some rolled up paper towel and some felt thats wrapped in rubber bands."
-	size="half"
+	imageSize="half"
 %}
 
 {% include youtube-player.html id="9P2SxUPruQw" %}
@@ -47,26 +46,26 @@ At this point, it was a decent self-propelled, semi-autonomous driver. Not a goo
 	post-image.html
 	image="2017-03-10-lsb-D394ECBA-F055-419D-A75A.jpg"
 	alt="Close up of about 12 dog hairs and some specs of dirt in the dirt tray."
-	size="half"
+	imageSize="half"
 %}
 
 With that said, after driving around a while, it did pick up a bit of dirt and dog hair. It's not efficient, but it does technically work.
+
+This was only possible because LEGO built an incredible product that packs the power of a small development board, like an Arduino, into something anyone could use. Software for the NXT 2 feels like a relic of when it was initially offered, circa 2006, but it was clearly a well developed product at that point. It's easy to drop their action blocks onto the timeline and assemble some pretty powerful programs. The ability to select a few blocks from your entire program, then click one button and have them run on your NXT is something from which the Arduino could learn a trick or two. The software looks similar to a Scratch environment, but it definitely has its own take on the paradigm and is branded phenomally well.
 
 {% include
 	post-image.html
 	image="2017-03-10-lsb-1489196389257.png"
 	alt="A screenshot of the Lego Mindstorms software showing a portion of the program. Each action in the program is represented by a square thats been placed along a timeline that looks like a technic part."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-lsb-1489196396462.jpeg"
 	alt="A screenshot of the inspector panel for an action within the Lego Mindstorms software."
-	size="half"
+	imageSize="half"
 %}
-
-This was only possible because LEGO built an incredible product that packs the power of a small development board, like an Arduino, into something anyone could use. Software for the NXT 2 feels like a relic of when it was initially offered, circa 2006, but it was clearly a well developed product at that point. It's easy to drop their action blocks onto the timeline and assemble some pretty powerful programs. The ability to select a few blocks from your entire program, then click one button and have them run on your NXT is something from which the Arduino could learn a trick or two. The software looks similar to a Scratch environment, but it definitely has its own take on the paradigm and is branded phenomally well.
 
 {% include
 	post-image.html
@@ -81,14 +80,14 @@ The NXT 3 looks like a really solid update, and I might have grab that. Can't wa
 	post-image.html
 	image="2017-03-10-lsb-F58ECB54-BC24-49E1-A50A.jpg"
 	alt="A close up of the pivoting sensor arm."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-lsb-35692EEC-4F08-421D-B4D7.jpg"
 	alt="A close up of the tangle of wires running the robot."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
@@ -101,14 +100,14 @@ The NXT 3 looks like a really solid update, and I might have grab that. Can't wa
 	post-image.html
 	image="2017-03-10-lsb-9F3EEC7B-09B9-43F6-BD27.jpg"
 	alt="A closeup of the distance sensor swung to point towards the user."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-lsb-4156345F-9802-464C-9CD1.jpg"
 	alt="A close up of the distance sensor swung to point away from the user."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
@@ -121,13 +120,13 @@ The NXT 3 looks like a really solid update, and I might have grab that. Can't wa
 	post-image.html
 	image="2017-03-10-lsb-1489196455024.jpeg"
 	alt="A close up of the dirt trays support wheel."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-03-10-lsb-1489196460547.jpeg"
 	alt="A side view of the treads that move the robot."
-	size="half"
+	imageSize="half"
 %}
 

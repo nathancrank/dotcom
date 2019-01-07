@@ -1,10 +1,12 @@
 {%- if include.caption -%}
-	<figure>
-		<img async='on' class='post-image post-image-{{ include.imageSize | default: "full" }}' src='../../../assets/post-images/{{ include.image }}' alt='{{ include.alt }}' data-jslghtbx data-jslghtbx-group='post-group' />
+	<figure class='post-image post-image-{{ include.imageSize | default: "full" }}'>
+		<img async='on'  src='../../../assets/post-images/{{ include.image }}' alt='{{ include.alt }}' data-jslghtbx data-jslghtbx-group='post-group' />
 		<figcaption>
 			{{ include.caption }}
 		</figcaption>
 	</figure>
 {%- else -%}
-	<img async='on' class='post-image post-image-{{ include.imageSize | default: "full" }}' src='../../../assets/post-images/{{ include.image }}' alt='{{ include.alt }}' data-jslghtbx data-jslghtbx-group='post-group' />
+	<div class='post-image post-image-{{ include.imageSize | default: "full" }}'>
+		<img async='on' src='../../../assets/post-images/{{ include.image }}' alt='{{ include.alt }}' data-jslghtbx data-jslghtbx-group='post-group' />
+	</div>
 {%- endif -%}

@@ -1,3 +1,7 @@
+.post {
+  overflow: auto;
+}
+
 .post-list-heading {
   font-size: 2em;
 }
@@ -21,13 +25,10 @@
   font-size: 1.5em;
 }
 
-
-
-/**
- * Posts
- */
 .post-header {
-  margin-bottom: $spacing-unit;
+  // margin-bottom: $spacing-unit;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-title {
@@ -43,6 +44,13 @@
 .post-content {
   margin-bottom: $spacing-unit;
   font-size: 1.2em;
+  @include minq($mq-medium) {
+    margin-left: 25%;
+  }
+  @include minq($mq-large) {
+    margin-left: 40%;
+    font-size: 1.4em
+  }
 
   h2 {
     font-size: 1.75em;
@@ -63,5 +71,112 @@
     @include minq($mq-medium) {
       font-size: 1.25em;
     }
+  }
+}
+
+.post-image {
+  margin-bottom: 1.5em;
+  &-half {
+    @include minq($mq-small) {
+      float: left;
+      width: calc(50% - .75em);
+      p ~ & {
+        padding-right: 1.5em;
+      }
+      & + & {
+        float: right;
+        p ~ & {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  &-third {
+    @include minq($mq-small) {
+      float: left;
+      width: calc(33% - 1em);
+      p ~ & {
+        padding-right: 1.5em;
+      }
+      & + & + & {
+        float: right;
+        p ~ & {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  &-quarter {
+    @include minq($mq-small) {
+      float: left;
+      width: calc(25% - 1.125em);
+      p ~ & {
+        padding-right: 1.5em;
+      }
+      & + & + & + & {
+        float: right;
+        p ~ & {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.post-navigation {
+  font-family: $font-aktiv;
+  font-weight: bold;
+  background-color: $grey-color-lightest;
+  box-shadow: rgba($grey-color, .15) 0 .25em 3em;
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1.1rem;
+  a {
+    display: block;
+    padding: .5em;
+    margin: 0 -.5em;
+    text-decoration: none;
+    &,&:visited {
+      color: $text-color;
+    }
+    &:hover {
+      background-color: $grey-color-lighter;
+      border-radius: 1em;
+    }
+  }
+  div {
+    text-decoration: underline;
+  }
+  h6 {
+    font-family: $font-minion;
+    font-size: 1.2em;
+    display: block;
+    border-bottom: 1px solid $grey-color-lighter;
+    padding: 0 1em .5em;
+    margin: 0 -.8em .6em;
+  }
+  img {
+    // width: .6em;
+    height: .8em;
+    padding: .25em;
+    text-align: top;
+    margin-top: -.35em
+  }
+}
+.post-navigation-list {
+  list-style: none;
+  margin: 0;
+}
+@include minq($mq-small) {
+  .post-navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & > li {
+      width: 50%;
+    }
+  }
+  .post-navigation-previous {
+    text-align: right;
   }
 }

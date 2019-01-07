@@ -24,7 +24,9 @@ layout: default
           <img async='on' src='assets/post-images/{{ post.banner }}' alt='{{ post.alt }}' />
         {%- endif -%}
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          <div class="post-content">
+            {{ post.excerpt }}
+          </div>
         {%- endif -%}
         {%- if post.excerpt -%}
           <a href="{{ post.url | join: site.baseurl | relative_url }}">
