@@ -178,8 +178,8 @@ $font-color-hover-1: #C3B919;
   @media (min-width: 451px) {
     right: .6em;
     &.jslghtbx-no-img {
-      border-top: 110px solid transparent;
-      border-bottom: 110px solid transparent;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
       border-left: 40px solid $text-color;
     }
   }
@@ -187,9 +187,9 @@ $font-color-hover-1: #C3B919;
     &.jslghtbx-no-img {
       right: 5px;
       padding-left: 0;
-      border-top: 60px solid transparent;
-      border-bottom: 60px solid transparent;
-      border-left: 15px solid $text-color;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 20px solid $text-color;
     }
   }
   @media (max-width: 450px) {
@@ -206,8 +206,8 @@ $font-color-hover-1: #C3B919;
   @media (min-width: 451px) {
     left: .6em;
     &.jslghtbx-no-img {
-      border-top: 110px solid transparent;
-      border-bottom: 110px solid transparent;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
       border-right: 40px solid $text-color;
     }
   }
@@ -215,9 +215,9 @@ $font-color-hover-1: #C3B919;
     &.jslghtbx-no-img {
       left: 5px;
       padding-right: 0;
-      border-top: 60px solid transparent;
-      border-bottom: 60px solid transparent;
-      border-right: 15px solid $text-color;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-right: 20px solid $text-color;
     }
   }
   @media (max-width: 450px) {
