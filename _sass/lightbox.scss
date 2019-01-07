@@ -16,34 +16,9 @@ $def-font-color: #6c7176;
 $font-color-highlight: #A99929;
 $font-color-hover-1: #C3B919;
 
-$darkblue: #3F658B;
-@mixin prefixr($var, $val) {
-  -webkit-#{$var}: $val;
-  -moz-#{$var}: $val;
-  -o-#{$var}: $val;
-  -ms-#{$var}: $val;
-  $var: $val;
-}
-
-/* IE8 Stuff */
-.jslghtbx-ie8.jslghtbx {
-  background-image: url('../img/trans-bck.png');
-  display: none;
-  &.jslghtbx-active {
-    display: block;
-  }
-  .jslghtbx-contentwrapper > img {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    display: block;
-  }
-  .jslghtbx-contentwrapper.jslghtbx-wrapper-active > img {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  }
-}
 
 /* Main wrapper */
 .jslghtbx {
-  font-family: sans-serif;
   overflow: auto;
   visibility: hidden;
   position: fixed;
@@ -55,7 +30,9 @@ $darkblue: #3F658B;
   background-color: rgba(0, 0, 0, 0);
   &.jslghtbx-active {
     visibility: visible;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba($grey-color-lighter, 0.97);
+    -webkit-backdrop-filter: blur(4px) grayscale(1);
+    backdrop-filter: blur(1em) grayscale(1);
   }
 }
 
@@ -77,7 +54,7 @@ $darkblue: #3F658B;
     border-radius: 20px;
     margin: 5px;
     background-color: #fff;
-    @include prefixr(transition, all .3s ease-in-out);
+    transition: all .3s ease-in-out;
     &.jslghtbx-active {
       margin-bottom: 60px;
     }
@@ -97,7 +74,7 @@ $darkblue: #3F658B;
   visibility: hidden;
   & > img {
     background: #fff;
-    padding: .5em;
+    // padding: .5em;
     display: none;
     height: auto;
     margin-left: auto;
@@ -137,22 +114,19 @@ $darkblue: #3F658B;
 }
 
 .jslghtbx-contentwrapper > img.jslghtbx-animate-transition {
-  @include prefixr(transition, opacity .2s ease-in-out);
+  transition: opacity .2s ease-in-out;
 }
 
 .jslghtbx-contentwrapper > img.jslghtbx-animating-next {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .jslghtbx-contentwrapper > img.jslghtbx-animating-prev {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .jslghtbx-contentwrapper > img.jslghtbx-animate-init {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .jslghtbx-contentwrapper > img.jslghtbx-animate-transition {
@@ -161,6 +135,7 @@ $darkblue: #3F658B;
 
 /* Controls */
 .jslghtbx-close {
+  display: none;
   position: fixed;
   right: 23px;
   top: 23px;
@@ -168,11 +143,11 @@ $darkblue: #3F658B;
   font-size: 2em;
   color: $def-color-1;
   cursor: pointer;
-  @include prefixr(transition, all .3s ease-in-out);
+  transition: all .3s ease-in-out;
   &:hover {
     text-shadow: 0 0 10px #fff;
   }
-  @media screen and(max-width: 1060px) {
+  @media (max-width: 1060px) {
     font-size: 1.5em;
   }
 }
@@ -182,10 +157,10 @@ $darkblue: #3F658B;
   display: none;
   position: fixed;
   top: 50%;
-  max-width: 6%;
-  max-height: 250px;
+  max-width: 50px;
+  max-height: 50px;
   cursor: pointer;
-  @include prefixr(transition, all .2s ease-in-out);
+  transition: all .2s ease-in-out;
   &.jslghtbx-active {
     display: block;
   }
@@ -198,26 +173,26 @@ $darkblue: #3F658B;
 .jslghtbx-next {
   right: .6em;
   &.jslghtbx-no-img:hover {
-    border-left-color: #787878;
+    border-left-color: $grey-color;
   }
-  @media screen and(min-width: 451px) {
+  @media (min-width: 451px) {
     right: .6em;
     &.jslghtbx-no-img {
       border-top: 110px solid transparent;
       border-bottom: 110px solid transparent;
-      border-left: 40px solid #FFF;
+      border-left: 40px solid $text-color;
     }
   }
-  @media screen and(max-width: 600px) {
+  @media (max-width: 600px) {
     &.jslghtbx-no-img {
       right: 5px;
       padding-left: 0;
       border-top: 60px solid transparent;
       border-bottom: 60px solid transparent;
-      border-left: 15px solid #FFF;
+      border-left: 15px solid $text-color;
     }
   }
-  @media screen and(max-width: 450px) {
+  @media (max-width: 450px) {
     right: .2em;
     padding-left: 20px;
   }
@@ -226,36 +201,36 @@ $darkblue: #3F658B;
 .jslghtbx-prev {
   left: .6em;
   &.jslghtbx-no-img:hover {
-    border-right-color: #787878;
+    border-right-color: $grey-color;
   }
-  @media screen and(min-width: 451px) {
+  @media (min-width: 451px) {
     left: .6em;
     &.jslghtbx-no-img {
       border-top: 110px solid transparent;
       border-bottom: 110px solid transparent;
-      border-right: 40px solid #FFF;
+      border-right: 40px solid $text-color;
     }
   }
-  @media screen and(max-width: 600px) {
+  @media (max-width: 600px) {
     &.jslghtbx-no-img {
       left: 5px;
       padding-right: 0;
       border-top: 60px solid transparent;
       border-bottom: 60px solid transparent;
-      border-right: 15px solid #FFF;
+      border-right: 15px solid $text-color;
     }
   }
-  @media screen and(max-width: 450px) {
+  @media (max-width: 450px) {
     left: .2em;
     padding-right: 20px;
   }
 }
 
 .jslghtbx-thmb {
-  @media screen and(min-width: 451px) {
+  @media (min-width: 451px) {
     margin: 1em;
   }
-  @media screen and(max-width: 450px) {
+  @media (max-width: 450px) {
     margin: 1em 0;
   }
   padding: 2px;
@@ -263,7 +238,7 @@ $darkblue: #3F658B;
   max-height: 140px;
   cursor: pointer;
   box-shadow: 0px 0px 3px 0px #000;
-  @include prefixr(transition, all .3s ease-in-out);
+  transition: all .3s ease-in-out;
   &:hover {
     box-shadow: 0px 0px 14px 0px #000;
   }
