@@ -67,11 +67,15 @@
 
 .post-content {
   margin-bottom: .4em;
-  padding: 1em .5em .25em;
+  margin: 0 -4vw .4em;
+  padding: 1em 0 .25em;
   font-size: 1.2em;
   overflow: auto;
   @include minq($mq-large) {
     font-size: 1.4em
+  }
+  p, ul {
+    padding: 0 .5em;
   }
 
   h2 {
@@ -98,6 +102,10 @@
 
 .post-image {
   margin-bottom: 1.5em;
+  // margin: 0 -2vw 1.5em;
+  // figcaption {
+  //   padding: 0 2em;
+  // }
   &-half {
     @include minq($mq-small) {
       float: left;
