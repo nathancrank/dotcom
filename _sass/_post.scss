@@ -30,10 +30,6 @@
   font-family: $font-aktiv;
   display: flex;
   flex-direction: column;
-  // margin-bottom: .5em;
-  @include minq($mq-medium) {
-    margin-bottom: 2em;
-  }
 }
 
 .post-banner {
@@ -46,10 +42,10 @@
   font-size: 1.2em;
   @include minq($mq-medium) {
     padding: 1em .5em .25em 1em;
-    margin-left: calc(12.5% + .5em);
+    margin-left: calc(25% + .5em);
   }
   @include minq($mq-large) {
-    margin-left: calc(25% + .5em);
+    margin-left: calc(33% + .5em);
     font-size: 1.4em
   }
 }
