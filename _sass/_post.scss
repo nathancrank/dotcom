@@ -46,10 +46,10 @@
   font-size: 1.2em;
   @include minq($mq-medium) {
     padding: 1em .5em .25em 1em;
-    margin-left: calc(25% - .5em);
+    margin-left: calc(12.5% + .5em);
   }
   @include minq($mq-large) {
-    margin-left: calc(33% - .5em);
+    margin-left: calc(25% + .5em);
     font-size: 1.4em
   }
 }
@@ -65,6 +65,13 @@
   }
 }
 
+.e-content {
+  p:first-of-type {
+    font-family: $font-aktiv;
+    font-weight: bold;
+  }
+}
+
 .post-content {
   margin-bottom: .4em;
   padding: 1em 1em .25em;
@@ -74,7 +81,7 @@
     margin: 0 -1em .4em;
   }
   @include minq($mq-large) {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   p, ul {
     padding: 0 .5em;
