@@ -7,13 +7,12 @@
   font-weight: 700;
   font-family: $font-aktiv;
   line-height: 1;
-  letter-spacing: .25vw;
   text-transform: uppercase;
   text-decoration: none;
 
   &,
   &:visited {
-    color: $grey-color;
+    color: $text-color;
   }
   &:hover {
     text-decoration: none;

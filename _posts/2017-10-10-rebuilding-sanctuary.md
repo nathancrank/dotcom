@@ -172,14 +172,15 @@ The following is a brief tour.
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672081317.jpeg"
-	caption="Education is important."
 	alt="An old American style red single room school house."
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672085838.jpeg"
 	alt="School desks lined up in the school house."
+	imageSize="half"
 %}
 
 {% include
@@ -227,14 +228,14 @@ The following is a brief tour.
 	post-image.html
 	image="2017-10-10-rs-1507672115685.jpeg"
 	alt="A view of one condo&apos;s living room."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672118843.jpeg"
 	alt="A view of one condo&apos;s bedroom."
-	size="half"
+	imageSize="half"
 %}
 
 {% include
@@ -255,12 +256,14 @@ The following is a brief tour.
 	post-image.html
 	image="2017-10-10-rs-1507672132622.jpeg"
 	alt="Side view of the NukaCafe."
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-1507672137596.jpeg"
 	alt="The inside of the NukaCafe. A Nuka Cola bottle shaped robot mans the counter."
+	imageSize="half"
 %}
 
 {% include
@@ -326,15 +329,15 @@ The following is a brief tour.
 {% include
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161229212810.jpg"
-	caption="Grab a drink during the show."
 	alt="The bar at the pavilion."
+	imageSize="half"
 %}
 
 {% include
 	post-image.html
 	image="2017-10-10-rs-Fallout+4_20161229212837.jpg"
-	caption="Let the kids play while the show goes on."
 	alt="The original playground remains, but has been cleaned up. A new wooden path leads up to the street."
+	imageSize="half"
 %}
 
 {% include

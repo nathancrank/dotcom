@@ -1,5 +1,6 @@
 .post {
-  overflow: auto;
+  // overflow: auto;
+  margin-bottom: 0;
 }
 
 .post-list-heading {
@@ -26,15 +27,38 @@
 }
 
 .post-header {
-  // margin-bottom: $spacing-unit;
+  font-family: $font-aktiv;
   display: flex;
   flex-direction: column;
+  // margin-bottom: .5em;
+  @include minq($mq-medium) {
+    margin-bottom: 2em;
+  }
+}
+
+.post-banner {
+  order: 1;
+}
+
+.post-header-details {
+  order: 2;
+  padding: 1em .5em .25em;
+  font-size: 1.2em;
+  @include minq($mq-medium) {
+    padding: 1em .5em .25em 1em;
+    margin-left: calc(25% - .5em);
+  }
+  @include minq($mq-large) {
+    margin-left: calc(40% - .5em);
+    font-size: 1.4em
+  }
 }
 
 .post-title {
   font-size: 2.25em;
   letter-spacing: -1px;
   line-height: 1;
+  margin-bottom: .125em;
 
   @include minq($mq-small) {
     font-size: 3em;
@@ -42,13 +66,11 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  margin-bottom: .4em;
+  padding: 1em .5em .25em;
   font-size: 1.2em;
-  @include minq($mq-medium) {
-    margin-left: 25%;
-  }
+  overflow: auto;
   @include minq($mq-large) {
-    margin-left: 40%;
     font-size: 1.4em
   }
 
@@ -125,23 +147,20 @@
 
 .post-navigation {
   font-family: $font-aktiv;
-  font-weight: bold;
-  background-color: $grey-color-lightest;
-  box-shadow: rgba($grey-color, .15) 0 .25em 3em;
-  border-radius: 1em;
-  padding: 1em;
-  font-size: 1.1rem;
+  padding: 1em 1.05em;
+  margin-bottom: 3em;
   a {
     display: block;
     padding: .5em;
     margin: 0 -.5em;
     text-decoration: none;
+    height: calc(100% - .65em);
     &,&:visited {
       color: $text-color;
     }
     &:hover {
       background-color: $grey-color-lighter;
-      border-radius: 1em;
+      border-radius: .75em;
     }
   }
   div {
@@ -152,8 +171,8 @@
     font-size: 1.2em;
     display: block;
     border-bottom: 1px solid $grey-color-lighter;
-    padding: 0 1em .5em;
-    margin: 0 -.8em .6em;
+    padding: 0 .8em .5em;
+    margin: 0 -.6em .6em;
   }
   img {
     // width: .6em;
@@ -172,8 +191,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
     & > li {
-      width: 50%;
+      width: 100%;
+      flex-basis: 1;
     }
   }
   .post-navigation-previous {

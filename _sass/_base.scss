@@ -60,8 +60,10 @@ figure > img {
 }
 
 figcaption {
-  margin: .25em 0 1em;
-  font-size: $small-font-size;
+  padding: .65em 0 .75em;
+  font-size: .75em;
+  font-family: $font-aktiv;
+  font-weight: bold;
 }
 
 
@@ -288,4 +290,13 @@ template {
 
 [hidden] {
   display: none;
+}
+
+.sit-right {
+  @include minq($mq-medium) {
+    margin-left: 25%;
+  }
+  @include minq($mq-large) {
+    margin-left: 40%;
+  }
 }
