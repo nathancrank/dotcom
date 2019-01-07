@@ -5,6 +5,16 @@
 	padding-top: 25px;
 	height: 0;
 	margin-bottom: 1em;
+  margin: 0 -1em 1em;
+  @include minq($mq-medium) {
+    margin: 0 0 1em;
+  }
+  figcaption {
+    padding: 0 2em;
+    @include minq($mq-medium) {
+      padding: 0;
+    }
+  }
 	iframe {
 		position: absolute;
 		top: 0;

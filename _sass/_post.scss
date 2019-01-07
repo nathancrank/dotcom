@@ -49,7 +49,7 @@
     margin-left: calc(25% - .5em);
   }
   @include minq($mq-large) {
-    margin-left: calc(40% - .5em);
+    margin-left: calc(33% - .5em);
     font-size: 1.4em
   }
 }
@@ -67,12 +67,14 @@
 
 .post-content {
   margin-bottom: .4em;
-  margin: 0 -4vw .4em;
-  padding: 1em 0 .25em;
+  padding: 1em 1em .25em;
   font-size: 1.2em;
   overflow: auto;
+  @include maxq($mq-medium) {
+    margin: 0 -1em .4em;
+  }
   @include minq($mq-large) {
-    font-size: 1.4em
+    font-size: 1.4em;
   }
   p, ul {
     padding: 0 .5em;
@@ -101,15 +103,20 @@
 }
 
 .post-image {
-  margin-bottom: 1.5em;
-  // margin: 0 -2vw 1.5em;
-  // figcaption {
-  //   padding: 0 2em;
-  // }
+  margin: 0 -1em 1.5em;
+    @include minq($mq-medium) {
+      margin: 0 0 1.5em;
+    }
+  figcaption {
+    padding: .25em 1.5em 0;
+    @include minq($mq-medium) {
+      padding: .25em 0 0;
+    }
+  }
   &-half {
     @include minq($mq-small) {
       float: left;
-      width: calc(50% - .75em);
+      width: 50%;
       p ~ & {
         padding-right: 1.5em;
       }
@@ -119,6 +126,9 @@
           padding-right: 0;
         }
       }
+    }
+    @include minq($mq-medium) {
+      width: calc(50% - .75em);      
     }
   }
   &-third {
