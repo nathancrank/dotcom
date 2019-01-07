@@ -1,11 +1,13 @@
 <!-- https://adam.garrett-harris.com/how-to-easily-embed-youtube-videos-in-jekyll-sites-without-a-plugin/ -->
 {%- if include.caption -%}
-	<figure>
+	<figure class="youtube-player">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
 		<figcaption>
 			{{ include.caption }}
 		</figcaption>
 	</figure>
 {%- else -%}
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+	<div class="youtube-player">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
+	</div>
 {%- endif -%}
