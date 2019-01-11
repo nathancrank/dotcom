@@ -20,25 +20,13 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+        <div class="sit-right fourohfour">
+  <div class="fourohfour-box">
+    <h1>404</h1>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Sorry to disappoint partner, but there ain&apos;t nothin&apos; here.</strong></p>
-  <p>Try the <a href='/dotcom/''>homepage</a> or one of the following articles:</p>
+    <p><strong>Sorry to disappoint partner, but there ain&apos;t nothin&apos; here.</strong></p>
+    <p>Try one of these articles:</p>
+  </div>
   <ul>
     <script type="text/javascript">
 
@@ -49,7 +37,7 @@
 
       var randomIndexUsed = [];
       var counter = 0;
-      var numberOfPosts = 3;
+      var numberOfPosts = 4;
 
       while (counter < numberOfPosts)
       {
@@ -65,14 +53,7 @@
               postTitle = postsTitle[randomIndex];
               postExcerpt = postsExcerpt[randomIndex];
 
-              if (counter == (numberOfPosts - 1))
-              {
-                  document.write('<li><a href="' + postHREF + '">' + postTitle + '</a><p>' + postExcerpt + '</p></li>');
-              }
-              else
-              {
-                  document.write('<li><a href="' + postHREF + '">' + postTitle + '</a><p>' + postExcerpt + '</p></li>');
-              }
+              document.write('<li class="card post-preview"><a href="' + postHREF + '">' + postTitle + '</a><p>' + postExcerpt + '</p></li>');
 
               randomIndexUsed.push(randomIndex);
 

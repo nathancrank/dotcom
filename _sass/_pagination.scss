@@ -1,0 +1,66 @@
+.pagination {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1.1em;
+	margin-bottom: 3em;
+	span.next,
+	span.previous,
+	span.next::before,
+	span.previous::after, {
+		color: $grey-color-light;
+		fill: $grey-color-light;
+	}
+	a.next,
+	a.previous {
+		&, &:visited {
+			color: $grey-color;
+			text-decoration: none;
+		}
+		&:hover {
+      background-color: $grey-color-lighter;
+      border-radius: .75em;
+		}
+	}
+	.next,
+	.previous {
+		padding:  .4em .5em;
+		margin:  -.4em -.5em;
+		font-family: $font-aktiv;
+		font-weight: bold;
+		width: 50%;
+	}
+
+	.previous::before,
+	.next::after {
+		display: inline-block;
+		content: "";
+		height: 16px;
+		width: 9px;
+		background-repeat: no-repeat;
+		margin-bottom: -.0625em;
+	}
+	.previous {
+		&::before {
+			background-image: url('#{$baseurl}/assets/arrow-left.svg');
+			margin-right: .25em;
+		}
+	}
+	.next {
+		text-align: right;
+		&::after {
+			background-image: url('#{$baseurl}/assets/arrow-right.svg');
+			margin-left: .25em;
+		}
+	}
+	.page-number {
+		flex-basis: 100%;
+		font-family: $font-minion;
+    font-size: 1.2em;
+    display: block;
+    border-bottom: 1px solid $grey-color-lighter;
+    padding: 0 .6em .5em;
+    margin: 0 -.6em .8em;
+	}
+}

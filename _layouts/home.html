@@ -13,32 +13,37 @@ layout: default
     <ul class="post-list">
       {%- for post in paginator.posts -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | join: site.baseurl | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h2>
         {%- if post.banner -%}
-          <img async='on' src='assets/post-images/{{ post.banner }}' alt='{{ post.alt }}' />
+          <img class="post-banner" async='on' src='assets/post-images/{{ post.banner }}' alt='{{ post.alt }}' />
         {%- endif -%}
-        {%- if site.show_excerpts -%}
-          <div class="post-content">
-            {{ post.excerpt }}
-          </div>
-        {%- endif -%}
-        {%- if post.excerpt -%}
-          <a href="{{ post.url | join: site.baseurl | relative_url }}">
-            Continue Reading&nbsp;&hellip;
-          </a>
-        {%- endif -%}        
+        <div class="card">
+          <h2>
+            <a class="post-link" href="{{ post.url | join: site.baseurl | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h2>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {%- if site.show_excerpts -%}
+            <div class="post-excerpt">
+              {{ post.excerpt }}
+              {%- if post.excerpt -%}
+                <a class="post-continue" href="{{ post.url | join: site.baseurl | relative_url }}">
+                  Continue Reading&nbsp;&hellip;
+                </a>
+              {%- endif -%}   
+            </div>
+          {%- endif -%}
+        </div>   
       </li>
       {%- endfor -%}
     </ul>
   {%- endif -%}
 
-  <div class="pagination">
+  <div class="pagination card sit-right">
+    <span class="page-number ">
+      Page {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | join: site.baseurl | relative_url }}" class="previous">
         Previous
@@ -46,9 +51,6 @@ layout: default
     {% else %}
       <span class="previous">Previous</span>
     {% endif %}
-    <span class="page_number ">
-      Page: {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | join: site.baseurl | relative_url }}" class="next">Next</a>
     {% else %}

@@ -1,0 +1,65 @@
+.post-list {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	& > li {
+		box-sizing: border-box;
+		@include minq($mq-small) {
+			flex-basis: 50%;
+			padding-top: .75em;
+			padding-bottom: .75em;
+			&:nth-of-type(odd) {
+				padding-right: .75em;
+			}
+			&:nth-of-type(even) {
+				padding-left: .75em;
+			}
+		}
+		@include minq($mq-medium) {
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			&:nth-of-type(odd) {
+				padding-right: 1.5em;
+			}
+			&:nth-of-type(even) {
+				padding-left: 1.5em;
+			}
+		}
+		.card {
+			padding: 1em;
+		}
+		& img ~ .card {
+		  border-radius: 0 0 1em 1em;
+		  border-top: 0;
+		  margin-top: 0;
+		}
+		.post-excerpt {
+			font-weight: normal;
+			margin: 1em 0 0;
+		  @include minq($mq-medium) {
+		    font-size: 1.3em;
+		  }
+			.post-continue {
+				font-family: $font-aktiv;
+				font-weight: bold;
+			}
+		}
+	}
+	.post-meta {
+		font-weight: bold;
+		font-family: $font-aktiv;
+	}
+	.post-link {
+		text-decoration: none;
+		font-size: 1.75em;
+	  letter-spacing: -1px;
+	  line-height: 1;
+	  margin-bottom: .125em;
+	  @include minq($mq-medium) {
+	    font-size: 2em;
+	  }
+	  &, &:visited {
+	  	color: $text-color;
+	  }
+	}
+}
