@@ -14,7 +14,9 @@ layout: default
       {%- for post in paginator.posts -%}
       <li>
         {%- if post.banner -%}
-          <img class="post-banner" async='on' src='assets/post-images/{{ post.banner }}' alt='{{ post.alt }}' />
+          <a class="post-banner" href="{{ post.url | join: site.baseurl | relative_url }}">
+            <img async='on' src='assets/post-images/{{ post.banner }}' alt='{{ post.alt }}' />
+          </a>
         {%- endif -%}
         <div class="card">
           <h2>
