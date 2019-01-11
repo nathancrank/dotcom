@@ -18,7 +18,7 @@ title: Nathan Crank
 # description: >- # this means to ignore newlines until "baseurl:"
   # My website. Yup.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://nathancrank.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nathancrank.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nathancrank
 github_username:  nathancrank
 instagram_username: arealcrank
