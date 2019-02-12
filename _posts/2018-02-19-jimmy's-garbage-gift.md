@@ -2,7 +2,7 @@
 layout: post
 title: Jimmy's Garbage Gift
 tag: vintage computers, lisa, mac, next
-banner: "2018-02-19-jgg-IMG_5504.jpg"
+banner: "2018-02-19-jgg-banner.jpg"
 alt: "An Apple Lisa 2 disassembled on my workbench"
 ---
 

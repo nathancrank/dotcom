@@ -2,7 +2,7 @@
 layout: post
 title: LEGO Sweeping Bot
 tag: development, lego, robots
-banner: "2017-03-10-lsb-CD9A2933.jpg"
+banner: "2017-03-10-lsb-banner.jpg"
 ---
 
 I recently acquired a LEGO Mindstorms NXT 2 via work. The first night we had it, Emma and I built the robot from the booklet, loaded up the basic program provided, and made it drive around for a minute shooting little balls. Then, because it's LEGO, I took it apart and began work on my own robot.

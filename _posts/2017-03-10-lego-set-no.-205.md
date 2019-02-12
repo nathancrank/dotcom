@@ -2,7 +2,7 @@
 layout: post
 title: LEGO Set NO. 205
 tag: LEGO
-banner: "2017-03-10-205-3C39205A-C767-4030-BC1E-A185BE4CE22E.jpg"
+banner: "2017-03-10-205-banner.jpg"
 alt: "Front view of LEGO building set no. 205. The front of the box is split into three panels. The first panel from the left features the primary lego part colors in vertical parts, with the square LEGO logo below, with Building Toy and other text written within the red square. The second section features a young girl playing with parts and a 205 PIECE SET badege. The last section from the left features a little boy building a church like structure."
 ---
 
