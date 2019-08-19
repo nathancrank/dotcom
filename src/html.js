@@ -15,14 +15,6 @@ export default function HTML(props) {
           name="viewport-fit"
           content="cover"
         />
-        <meta
-          name="apple-mobile-web-app-capable"
-          content="yes"
-        />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
