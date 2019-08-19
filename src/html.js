@@ -9,14 +9,18 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
-          content="device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no, cover"
+          content="device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no"
+        />
+        <meta
+          name="viewport-fit"
+          content="cover"
         />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
-          This app works best with JavaScript enabled.
+          This is a silly demo site, so turn on javascript or miss out.
         </noscript>
         <div
           key={`body`}
