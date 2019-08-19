@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   return (
     <>
     	<Helmet>
-    		<meta width="device-width, initial-scale=1, shrink-to-fit=no, cover" />
+    		<meta width="device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no, cover" />
     	</Helmet>
       <main>{children}</main>
     </>
