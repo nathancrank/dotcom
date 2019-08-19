@@ -297,7 +297,6 @@ class Torch extends React.Component {
 			  		flexDirection: `column`,
 			  		justifyContent: `space-between`,
 			  		alignContent: `strech`,
-			  		userSelect: `none`,
 		  		}}
 		  	>
 		  		{renderMatrix}
