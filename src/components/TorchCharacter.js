@@ -27,7 +27,7 @@ class TorchCharacter extends React.Component {
 		if (typeof PointerEvent === "function") {
 			return (
 			  <span
-			  	onPointerEnter={this.toggleHover}
+			  	onPointerOver={this.toggleHover}
 			  	style={style}
 			  >
 			    {this.props.character}
@@ -36,7 +36,7 @@ class TorchCharacter extends React.Component {
 		} else {
 			return (
 			  <span
-			  	onMouseEnter={this.toggleHover}
+			  	onMouseOver={this.toggleHover}
 			  	style={style}
 			  >
 			    {this.props.character}
