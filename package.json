@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby clean && rm -rf ./docs && gatsby build && cp -r ./public ./docs",
+    "build": "gatsby clean && rm -rf ./docs && gatsby build && cp -r ./public ./docs && cp ./src/CNAME ./docs/CNAME",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
