@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Gingham';
+  src: url('./Gingham.woff2') format('woff2'),
+    url('./Gingham.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	font-family: 'Gingham';
+}
