@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `nathan-crank-dot-com`,
-        short_name: `dotcom`,
+        name: `nathancrankdotcom`,
+        short_name: `nathancrankdotcom`,
         start_url: `/`,
         background_color: `#272727`,
         theme_color: `#272727`,
