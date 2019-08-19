@@ -26,14 +26,19 @@ class Torch extends React.Component {
 	componentDidMount() {
   	this.createGrid( this.refs.container, this.state.focus )
   	window.addEventListener("resize", this.resize)
-  	window.addEventListener("orientationchange", this.resize)
+  	window.addEventListener("orientationchange", this.reorient)
   	document.addEventListener("contextmenu", event => event.preventDefault())
   }
 
   componentWillUnmount() {
   	window.removeEventListener("resize", this.resize)
-  	window.removeEventListener("orientationchange", this.resize)
+  	window.removeEventListener("orientationchange", this.reorient)
   }
+
+	reorient() {
+		this.newFocusPoint(0,0)
+		// this.resize()
+	}
 
   resize() {
   	this.createGrid( this.refs.container, this.state.focus )
