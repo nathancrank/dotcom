@@ -36,6 +36,7 @@ class Torch extends React.Component {
   }
 
 	reorient() {
+		alert('here')
 		this.newFocusPoint(0,0)
 		this.resize()
 	}
