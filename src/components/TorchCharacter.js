@@ -18,6 +18,7 @@ class TorchCharacter extends React.Component {
 			fontVariationSettings: `'wdth' ${this.props.width}, 'wght' ${this.props.weight}`,
 			width: this.props.size +'px',
 			height: this.props.size +'px',
+			userSelect: `none`,
 			transition: `color .1s ease-in-out, font-variation-settings .1s ease-in-out, rotate .1s ease-in-out`
 		}
 		if ( this.props.level > 0 ) {
