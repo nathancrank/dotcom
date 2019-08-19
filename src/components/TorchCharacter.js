@@ -23,14 +23,25 @@ class TorchCharacter extends React.Component {
 		if ( this.props.level > 0 ) {
 			style.transform = `rotate(${this.randomInt(-30,30)}deg)`
 		}
-		return (
-		  <span
-		  	onPointerOver={this.toggleHover}
-		  	style={style}
-		  >
-		    {this.props.character}
-		  </span>
-		)
+		if (typeof PointerEvent === "function") {
+			return (
+			  <span
+			  	onPointerEnter={this.toggleHover}
+			  	style={style}
+			  >
+			    {this.props.character}
+			  </span>
+			)
+		} else {
+			return (
+			  <span
+			  	onMouseEnter={this.toggleHover}
+			  	style={style}
+			  >
+			    {this.props.character}
+			  </span>
+			)
+		}
 	}
 }
 
