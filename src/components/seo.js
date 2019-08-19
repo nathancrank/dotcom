@@ -50,10 +50,6 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
-        },
-        {
-          name: `viewport`,
-          content: `device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no, cover`
         }
       ].concat(meta)}
     />
