@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
 
 import "./layout.css"
 import "../fonts/gingham/gingham.css"
@@ -14,6 +15,9 @@ import "../fonts/gingham/gingham.css"
 const Layout = ({ children }) => {
   return (
     <>
+    	<Helmet>
+    		<meta width="device-width, initial-scale=1, shrink-to-fit=no, cover" />
+    	</Helmet>
       <main>{children}</main>
     </>
   )
