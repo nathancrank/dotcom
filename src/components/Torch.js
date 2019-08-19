@@ -57,7 +57,7 @@ class Torch extends React.Component {
 
 		// determine grid item size
 		if ( sizes.width < 600 || sizes.height < 600 ) {
-			grid.itemSize = 100
+			grid.itemSize = 75
 		} else if ( sizes.width < 1200 || sizes.height < 1200 ) {
 			grid.itemSize = 150
 		} else {
