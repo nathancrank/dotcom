@@ -7,7 +7,7 @@ import Torch from "../components/Torch"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Annoyed?" />
+    <SEO title="Home" />
     <Torch text="Nathan Crank" rainbow={true}/>
   </Layout>
 )

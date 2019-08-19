@@ -277,8 +277,7 @@ class Torch extends React.Component {
 		  	aria-label={this.ariaLabel}
 		  	style={{
 		  		backgroundColor: this.state.colors.background,
-		  		transition: `background-color .005s ease-in-out`,
-			  	cursor: `url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFZJREFUeNqdzksKwDAIAFHH+x+6lIYOVPOhs5OHJnES/5UkYKEkU7xjijSIm50iFh4fAXgYDd/yumVVRSwsqq/nRA3xVK0oo06d5U6DpQZ7PV7lMxH7LkaQAbYFwryzAAAAAElFTkSuQmCC), help`,
+		  		transition: `background-color .1s ease-in-out`,
 			  	userSelect: `none`,
 		  	}}
 		  >
