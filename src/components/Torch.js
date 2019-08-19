@@ -20,6 +20,7 @@ class Torch extends React.Component {
 		this.text = this.props.text ? this.props.text.replace(/\s+/g, '').toUpperCase() : "TorchDemo".toUpperCase()
 		this.ariaLabel = "A torch demo with the text " + this.altText + " repeating"
 		this.resize = this.resize.bind(this)
+		this.reorient = this.reorient.bind(this)
 		this.newFocusPoint = this.newFocusPoint.bind(this)
 	}
 
@@ -36,9 +37,7 @@ class Torch extends React.Component {
   }
 
 	reorient() {
-		alert('here')
 		this.newFocusPoint(0,0)
-		this.resize()
 	}
 
   resize() {
