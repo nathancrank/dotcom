@@ -27,7 +27,6 @@ class TorchCharacter extends React.Component {
 		  <span
 		  	onMouseEnter={this.toggleHover}
 		  	onTouchStart={this.toggleHover}
-		  	onTouchMove={this.toggleHover}
 		  	style={style}
 		  >
 		    {this.props.character}
