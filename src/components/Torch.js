@@ -14,7 +14,7 @@ class Torch extends React.Component {
 		this.state = {
 			grid: {},
 			colors: colors,
-			focus: { row:0, column:0 }
+			focus: { row:-1, column:-1 }
 		}
 		this.altTest = this.props.text ? this.props.text : "TorchDemo"
 		this.text = this.props.text ? this.props.text.replace(/\s+/g, '').toUpperCase() : "TorchDemo".toUpperCase()
@@ -37,7 +37,7 @@ class Torch extends React.Component {
   }
 
 	reorient() {
-		this.newFocusPoint(0,0)
+		this.newFocusPoint(-1,-1)
 	}
 
   resize() {
@@ -69,6 +69,11 @@ class Torch extends React.Component {
 		// grid.rowGutter = Math.floor( sizes.height / grid.rows )
 		grid.columns = Math.floor( sizes.width / grid.itemSize )
 		// grid.columnGutter = Math.floor( sizes.width / grid.columns )
+
+		if ( focalPoint.row === -1 && focalPoint.column === -1 ) {
+			focalPoint.row = Math.floor( grid.rows / 2 )
+			focalPoint.column = Math.floor( grid.columns / 2 )
+		}
 
 		// determine appropriate levels of extra diffusion
 		//   all grids get 2 diffusion levels by default
