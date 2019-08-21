@@ -7,8 +7,6 @@ Did it need to be? Probably not.
 
 Yes, the code could be better. No, I am not concerned.
 
-Favicon from [favicon.io](https://favicon.io/emoji-favicons/name-badge/) via [Twemoji](https://twemoji.twitter.com/content/twemoji-twitter/en.html)
+Favicon and mice cursors from [favicon.io](https://favicon.io/emoji-favicons/name-badge/) via [Twemoji](https://twemoji.twitter.com/content/twemoji-twitter/en.html)
 
 Font is [Gingham](http://koe.berlin/variablefont/)
-
-Clarus the Moof cow from Apple and Susan Kare

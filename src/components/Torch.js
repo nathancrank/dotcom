@@ -11,10 +11,12 @@ class Torch extends React.Component {
 			font: this.props.background ? Color(this.props.background).hsl() : Color("black").hsl(),
 			torch: this.props.background ? Color(this.props.background).hsl() : Color("white").hsl(),
 		}
+		this.cursors = ["mouse", "rat", "face"]
 		this.state = {
 			grid: {},
 			colors: colors,
-			focus: { row:-1, column:-1 }
+			focus: { row:-1, column:-1 },
+			cursor: this.cursors[0]
 		}
 		this.altTest = this.props.text ? this.props.text : "TorchDemo"
 		this.text = this.props.text ? this.props.text.replace(/\s+/g, '').toUpperCase() : "TorchDemo".toUpperCase()
@@ -66,10 +68,9 @@ class Torch extends React.Component {
 
 		// determine grid rows and columns
 		grid.rows = Math.floor( sizes.height / grid.itemSize )
-		// grid.rowGutter = Math.floor( sizes.height / grid.rows )
 		grid.columns = Math.floor( sizes.width / grid.itemSize )
-		// grid.columnGutter = Math.floor( sizes.width / grid.columns )
 
+		// check if focal point needs to be recentered
 		if ( focalPoint.row === -1 && focalPoint.column === -1 ) {
 			focalPoint.row = Math.floor( grid.rows / 2 )
 			focalPoint.column = Math.floor( grid.columns / 2 )
@@ -209,7 +210,8 @@ class Torch extends React.Component {
 		// set state with new grid
 		this.setState( prevState => ({
 			grid: grid,
-			focus: focalPoint
+			focus: focalPoint,
+			cursor: this.cursors[this.randomInt(0,this.cursors.length)]
 		}))
 	}
 
@@ -243,7 +245,7 @@ class Torch extends React.Component {
 	}
 
 	randomInt(min, max) {
-		return Math.random() * (max - min) + min
+		return Math.floor( Math.random() * (max - min) + min )
 	}
 
 	render() {
@@ -302,6 +304,7 @@ class Torch extends React.Component {
 			  		flexDirection: `column`,
 			  		justifyContent: `space-between`,
 			  		alignContent: `strech`,
+			  		cursor: `url('cursors/${this.state.cursor}.png'), ne-resize`
 		  		}}
 		  	>
 		  		{renderMatrix}
